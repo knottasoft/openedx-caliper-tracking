@@ -23,7 +23,7 @@ def convert_datetime(current_datetime):
     """
 
     # convert current_datetime to a datetime object if it is string
-    if type(current_datetime) in (str, unicode):
+    if isinstance(current_datetime, str):
         current_datetime = parse(current_datetime)
 
     utc_offset = current_datetime.utcoffset()
