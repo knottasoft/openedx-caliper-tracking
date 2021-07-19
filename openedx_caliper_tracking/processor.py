@@ -12,7 +12,7 @@ from openedx_caliper_tracking.tasks import deliver_caliper_event_to_kafka
 
 try:
     # if app is running in edx-platfrom get BaseBackend from edx codebase
-    from track.backends import BaseBackend
+    from common.djangoapps.track.backends import BaseBackend
 except (NameError, ImportError):
     # if app is running locally for testing use Testing Backend
     from openedx_caliper_tracking.tests.testing_backend import BaseBackend
