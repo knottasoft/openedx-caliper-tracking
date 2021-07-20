@@ -209,8 +209,8 @@ PATH_MAPPING = {
     'edx.ui.lms.link_clicked': '/navigation',
     'edx.course.enrollment.activated': '/enrollment',
     'edx.course.enrollment.deactivated': '/enrollment',
-    'edx.course.enrollment.mode_changed': '/enrollment'
-    'edx.course.enrollment.upgrade.clicked': '/enrollment'
+    'edx.course.enrollment.mode_changed': '/enrollment',
+    'edx.course.enrollment.upgrade.clicked': '/enrollment',
     'speed_change_video': '/video',
     'edx.course.tool.accessed': '/navigation',
     'edx.course.goal.added': '/course',
@@ -218,15 +218,15 @@ PATH_MAPPING = {
     'edx.forum.response.created': '/forum',
     'problem_show': '/problem',
     'edx.ui.lms.sequence.next_selected': '/navigation',
-    'edx.ui.lms.sequence.previous_selected': '/navigation'
+    'edx.ui.lms.sequence.previous_selected': '/navigation',
     'seq_next': '/navigation',
     'seq_prev': '/navigation',
     'stop_video': '/video',
     'problem_graded': '/problem',
     'problem_save': '/problem',
     'edx.grades.problem.submitted': '/problem',
-    'edx.problem.hint.demandhint_displayed': '/problem'
-    'edx.problem.hint.feedback_displayed': '/problem'
+    'edx.problem.hint.demandhint_displayed': '/problem',
+    'edx.problem.hint.feedback_displayed': '/problem',
     'pause_video': '/video',
     'seek_video': '/video',
     'load_video': '/video',
