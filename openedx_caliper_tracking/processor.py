@@ -6,7 +6,7 @@ from django.conf import settings
 from requests.exceptions import ConnectionError
 
 from openedx_caliper_tracking.base_transformer import base_transformer, page_view_transformer
-from openedx_caliper_tracking.caliper_config import EVENT_MAPPING
+from openedx_caliper_tracking.caliper_config import EVENT_MAPPING, PATH_MAPPING
 from openedx_caliper_tracking.loggers import get_caliper_logger
 from openedx_caliper_tracking.tasks import deliver_caliper_event_to_kafka
 
@@ -65,7 +65,7 @@ def deliver_caliper_event(caliperized_event, event_type):
     """
     try:
         response = requests.post(
-            settings.CALIPER_DELIVERY_ENDPOINT,
+            settings.CALIPER_DELIVERY_ENDPOINT+PATH_MAPPING.get(event_type),
             headers={
                 'Authorization': 'Bearer {}'.format(
                     settings.CALIPER_DELIVERY_AUTH_TOKEN),
