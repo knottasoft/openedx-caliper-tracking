@@ -348,6 +348,7 @@ PATH_MAPPING = {
     'edx.user.logout': '/session',
     'edx.course_discovery.search.initiated': '/course_discovery',
     'edx.course_discovery.search.results_displayed': '/course_discovery',
+    'edx.course.student_notes.notes_page_viewed': '/navigation',
 
 
     ### Segment events
