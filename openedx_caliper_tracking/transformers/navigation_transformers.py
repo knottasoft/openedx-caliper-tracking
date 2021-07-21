@@ -243,7 +243,7 @@ def edx_course_student_notes_notes_page_viewed(current_event, caliper_event):
         'extensions': json.loads(current_event['event'])
     }
 
-    caliper_object['extensions'].update({
+    caliper_object['extensions']['extra_fields'].update({
         'course_id': current_event['context']['course_id'],
         'org_id': caliper_event['extensions']['extra_fields'].pop('org_id')
     })
