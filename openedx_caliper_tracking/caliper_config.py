@@ -265,7 +265,7 @@ PATH_MAPPING = {
     'textbook.pdf.zoom.buttons.changed': '/textbook',
     'book': '/textbook',
     'edx.course.enrollment.upgrade.succeeded': '/enrollment',
-    'edx.course.student_notes.notes_page_viewed': '/notes',
+    'edx.course.student_notes.notes_page_viewed': '/navigation',
     'edx.cohort.user_added': '/cohort',
     'edx.forum.thread.voted': '/forum',
     'edx.forum.response.voted': '/forum',
@@ -348,7 +348,6 @@ PATH_MAPPING = {
     'edx.user.logout': '/session',
     'edx.course_discovery.search.initiated': '/course_discovery',
     'edx.course_discovery.search.results_displayed': '/course_discovery',
-    'edx.course.student_notes.notes_page_viewed': '/navigation',
 
 
     ### Segment events
