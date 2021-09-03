@@ -64,6 +64,7 @@ def deliver_caliper_event(caliperized_event, event_type):
     event_type: (str) the type of the event being fired
     """
     try:
+        log_success(f"Адрес типа собыитя {event_type}: {settings.CALIPER_DELIVERY_ENDPOINT+PATH_MAPPING.get(event_type)}")
         response = requests.post(
             settings.CALIPER_DELIVERY_ENDPOINT+PATH_MAPPING.get(event_type),
             headers={
